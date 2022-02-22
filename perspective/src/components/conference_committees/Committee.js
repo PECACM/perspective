@@ -5,52 +5,46 @@ import "./Committee.css";
 
 function Committee() {
   const PATRON = ["Prof. Baldev Setia, Director, PEC Chandigarh"];
-  const CO_PATRON = ["wugduqw"];
-  const General_Chair = ["kugds"];
+  const CO_PATRON = ["Prof. Siby John, Deputy Director, PEC Chandigarh"];
+  const General_Chair = ["Prof. Shailendra Singh, Head of Department (CSE), PEC Chandigarh"];
   const Conference_Chairs = [
     "Prof. T.C. Aseri",
     "Prof. Sanjeev Sofat",
     "Prof. Rajesh Bhatia",
   ];
   const Org_sec = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Dr. Sandeep Harit",
+    "Dr. Padmavati",
   ];
   const Tech_Pro_Chair = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Prof. Mayank Gupta",
+    "Dr. Manish Kumar",
+    "Prof. Amandeep Singh",
   ];
   const Pub_chair = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Dr. Poonam Sain",
+    "Dr. Sachin Chaudhary",
   ];
   const Publicity_chair = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
     "Prof. Rajesh Bhatia",
+    "Dr. Rupali Syal",
   ];
   const Finance_Chair = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Prof. Sudesh Rani",
+    "Dr. Manish Kumar",
   ];
   const Spec_Chair = [
-    "Prof. T.C. Aseri",
     "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Prof. Alka Jindal",
   ];
   const Hos_Log_Chair = [
     "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Prof. Amandeep Kaur",
+    "Dr. Aruna Kumar Pundir",
   ];
   const Web_Management_Chair = [
-    "Prof. T.C. Aseri",
-    "Prof. Sanjeev Sofat",
-    "Prof. Rajesh Bhatia",
+    "Prof. Shilpa",
+    "Prof. Mamta",
   ];
 
   const National_Adv_Board = [
@@ -59,6 +53,19 @@ function Committee() {
     "Prof. Ajit Kumar Chaturvedi, Director, IIT Mandi",
     "Prof. Pushpak Bhattacharyya, Director, IIT Patna",
     "Prof. Prem Kalra, Head of Department(CSE), IIT Delhi",
+    "Prof. Rajeev Tripati, Director, MNIT Allahabad",
+    "Prof. Lalit Kumar Awasthi, Director, NIT Hamirpur",
+    "Prof. B.D. Chaudhary, IIT Mandi",
+    "Prof. Jai Prakash Saini, NSUT-NSIT, Delhi",
+    "Prof. Yogesh Singh, Director, DU",
+    "Prof. P. K. Khosla, Director CDAC, Mohali",
+    "Dr. Satish Kumar, Sr. Principal Scientist, CSIO, Chandigarh",
+    "Prof. Mayank Dave, NIT Kurukshetra",
+    "Prof. Neeraj Tyagi, MNIT Allahabad",
+    "Er. Prateek Kishore, Director TBRL, Chandigarh",
+    "Prof. Chiranjeev Kumar, IIT Dhanbad",
+    "Prof. Rama Krishna Challa, NITTTR Chandigarh",
+    "Prof. Subramaniam Anantha Ramakrishna, Director, CSIO",
   ];
 
   // const National_Adv_Board_cols = [[], []];
