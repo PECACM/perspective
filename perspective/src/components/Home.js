@@ -1,9 +1,10 @@
 import React from 'react'
-
+import NavigationBar from "./NavigationBar"
 function Home() {
   return (
     <div>
       Home
+        <NavigationBar/>
       {/* Navbar (Logo, items, register/login) */}
       {/* Picture carousel (Tagline, org by) */}
       {/* Sponsered by */}
