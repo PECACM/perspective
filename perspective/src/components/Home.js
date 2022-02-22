@@ -1,4 +1,5 @@
 import React from 'react'
+import NavigationBar from "./NavigationBar";
 
 //mui imports
 import { Typography } from "@mui/material";
@@ -10,6 +11,7 @@ import Carousel from './carousel/Carousel';
 function Home() {
   return (
     <div>
+      <NavigationBar/>
       {/* Navbar (Logo, items, register/login) */}
       {/* Picture carousel (Tagline, org by) */}
       {/* Sponsered by */}
