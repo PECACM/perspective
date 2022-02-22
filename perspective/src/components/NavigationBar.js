@@ -10,48 +10,36 @@ import Fade from '@mui/material/Fade';
 import Menu from '@mui/material/Menu';
 import Logo from "../static/pec-logo.png";
 
-const menu = ["Home", "About", "Conference Committee", "Call for Papers", "Important Details", "Contact Us", "Register/Login"]
-const about = ['About Institute', 'About Conference'];
-const committee = ['Organizing Committee', 'Advisory Board'];
-const details = ['Important Dates', 'Payment Gateway'];
-
-
 const NavigationBar = () => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 	const [anchorElAbout, setAnchorElAbout] = React.useState(null);
 	const [anchorElCommittee, setAnchorElCommittee] = React.useState(null);
 	const [anchorElDetails, setAnchorElDetails] = React.useState(null);
+	const openAbout = Boolean(anchorElAbout);
+	const openCommittee = Boolean(anchorElCommittee);
+	const openDetails = Boolean(anchorElDetails);
 	
 	
-	const handleOpenMenu = (event) => {
-		let type="XX"
-		console.log(type)
+	const handleOpenAbout = (event) => {
 		setAnchorElAbout(event.currentTarget);
-		if(type === "Nav"){
-			setAnchorElNav(event.currentTarget);
-		} else if(type === "About"){
-			console.log("Hello")
-			setAnchorElAbout(event.currentTarget);
-		} else if(type === "Committee"){
-			setAnchorElCommittee(event.currentTarget);
-		} else if(type === "Details"){
-			setAnchorElDetails(event.currentTarget);
-		}
-		
 	};
-	const handleCloseMenu = (event, type) => {
-		if(type === "Nav"){
-			setAnchorElNav(null);
-		} else if(type === "About"){
-			setAnchorElAbout(null);
-		} else if(type === "Committee"){
-			setAnchorElCommittee(null);
-		} else if(type === "Details"){
-			setAnchorElDetails(null);
-		}
-		
+	const handleCloseAbout = (event) => {
+		setAnchorElAbout(null);
 	};
 	
+	const handleOpenCommittee = (event) => {
+		setAnchorElCommittee(event.currentTarget);
+	};
+	const handleCloseCommittee = (event) => {
+		setAnchorElCommittee(null);
+	};
+	
+	const handleOpenDetails = (event) => {
+		setAnchorElDetails(event.currentTarget);
+	};
+	const handleCloseDetails = (event) => {
+		setAnchorElDetails(null);
+	};
 	return (
 		<AppBar position="static">
 			<Container maxWidth="xl">
@@ -63,42 +51,74 @@ const NavigationBar = () => {
 						src={Logo}/>
 					<Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
 						<Button
-							key="Home"
-							onClick={handleCloseMenu("Nav")}
 							sx={{my: 2, color: 'white', display: 'block'}}
-						><Link href="#" underline="hover">
-							Home
-						</Link>
-						</Button>
+						><Link href="#" color="white" underline="hover">Home</Link></Button>
 						<Button
 							key="About"
-							onClick={handleOpenMenu("About")}
+							onClick={handleOpenAbout}
 							sx={{my: 2, color: 'white', display: 'block'}}
-						>AboutT
-						</Button>
+						>About</Button>
 						<Menu
 							id="fade-menu"
 							MenuListProps={{
 								'aria-labelledby': 'fade-button',
 							}}
 							anchorEl={anchorElAbout}
-							// open={open}
-							onClose={handleCloseMenu("About")}
+							open={openAbout}
+							onClose={handleCloseAbout}
 							TransitionComponent={Fade}
 						>
-							<MenuItem onClick={handleCloseMenu("About")}>Profile</MenuItem>
-							<MenuItem onClick={handleCloseMenu("About")}>My account</MenuItem>
-							<MenuItem onClick={handleCloseMenu("About")}>Logout</MenuItem>
+							<MenuItem onClick={handleCloseAbout}><Link href="#" underline="hover">About Institute</Link></MenuItem>
+							<MenuItem onClick={handleCloseAbout}><Link href="#" underline="hover">About Conference</Link></MenuItem>
 						</Menu>
-						{menu.map((items) => (
-							<Button
-								key={items}
-								onClick={handleCloseMenu("Nav")}
-								sx={{my: 2, color: 'white', display: 'block'}}
-							>
-								{items}
-							</Button>
-						))}
+						<Button
+							key="Commitee"
+							onClick={handleOpenCommittee}
+							sx={{my: 2, color: 'white', display: 'block'}}
+						>Conference Committee</Button>
+						<Menu
+							id="fade-menu"
+							MenuListProps={{
+								'aria-labelledby': 'fade-button',
+							}}
+							anchorEl={anchorElCommittee}
+							open={openCommittee}
+							onClose={handleCloseCommittee}
+							TransitionComponent={Fade}
+						>
+							<MenuItem onClick={handleCloseCommittee}><Link href="#" underline="hover">Organizing Committee</Link></MenuItem>
+							<MenuItem onClick={handleCloseCommittee}><Link href="#" underline="hover">Advisory Board</Link></MenuItem>
+						</Menu>
+						<Button
+							sx={{my: 2, color: 'white', display: 'block'}}
+						><Link href="#" color="white" underline="hover">Call For Papers</Link></Button>
+						<Button
+							key="About"
+							onClick={handleOpenDetails}
+							sx={{my: 2, color: 'white', display: 'block'}}
+						>Important Details
+						</Button>
+						<Menu
+							id="fade-menu"
+							MenuListProps={{
+								'aria-labelledby': 'fade-button',
+							}}
+							anchorEl={anchorElDetails}
+							open={openDetails}
+							onClose={handleCloseDetails}
+							TransitionComponent={Fade}
+						>
+							<MenuItem onClick={handleCloseDetails}><Link href="#" underline="hover">Important Dates</Link></MenuItem>
+							<MenuItem onClick={handleCloseDetails}><Link href="#" underline="hover">Payment	Gateway</Link></MenuItem>
+						</Menu>
+						<Button
+							sx={{my: 2, color: 'white', display: 'block'}}
+						><Link href="#" color="white" underline="hover">Contact Us</Link></Button>
+						
+						<Button
+							sx={{my: 2, color: 'white', display: 'block'}}
+						><Link href="#" color="white" underline="hover">Login / Register</Link></Button>
+					
 					</Box>
 					
 					
