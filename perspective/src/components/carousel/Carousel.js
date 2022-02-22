@@ -4,9 +4,9 @@ import SimpleImageSlider from "react-simple-image-slider";
 
 
 //image imports
-import image1 from "./assets/one.png";
-import image2 from './assets/two.png'
-import image3 from './assets/three.jpg'
+import image1 from "./assets/one.jpg";
+import image2 from "./assets/two.jpg";
+import image3 from "./assets/one.jpg";
 
 function Carousel() {
   const images = [
@@ -20,11 +20,12 @@ function Carousel() {
   return (
     <div>
       <SimpleImageSlider
-        height={height/1.5}
+        height={height / 1.5}
         width={width}
         images={images}
         showBullets={true}
         showNavs={true}
+        autoPlay = {true}
       />
     </div>
   );

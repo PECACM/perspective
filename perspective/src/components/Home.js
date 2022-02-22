@@ -20,13 +20,15 @@ function Home() {
       {/* Contact us (Footer) */}
       <Grid container>
         <Grid item>
+          <Box mb={5}>
+            <Typography variant="h2">Navbar Component</Typography>
+          </Box>
+        </Grid>
+        <Grid item>
           <Carousel />
         </Grid>
         <Grid item>
           <Box m={5}>
-            <Box mb={5}>
-              <Typography variant="h2">Home Component</Typography>
-            </Box>
             <Button variant="contained" color="primary">
               Primary Theme
             </Button>
