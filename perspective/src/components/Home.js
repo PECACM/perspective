@@ -1,5 +1,6 @@
 import React from 'react'
-import NavigationBar from "./NavigationBar"
+import NavigationBar from "./NavigationBar";
+
 function Home() {
   return (
     <div>
