@@ -82,7 +82,7 @@ const NavigationBar = () => {
 					<Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
 						<Button
 							sx={{my: 2, color: 'white', display: 'block'}}
-						><Link href="#" color="white" underline="hover">Home</Link></Button>
+						><Link href="/" color="white" underline="hover">Home</Link></Button>
 						<Button
 							key="About"
 							onClick={handleOpenAbout}
@@ -195,7 +195,7 @@ const NavigationBar = () => {
 							}}
 						>
 							<MenuItem key="Home" onClick={handleCloseNav}>
-								<Link href="#" underline="hover">Home</Link>
+								<Link href="/" underline="hover">Home</Link>
 							</MenuItem>
 							<MenuItem
 								key="Details"
