@@ -70,8 +70,7 @@ const NavigationBar = () => {
 		handleCloseDetails(event);
 		setAnchorElNav(null);
 	};
-	return (
-		<AppBar position="static">
+	return (<AppBar position="static">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Box
@@ -140,7 +139,7 @@ const NavigationBar = () => {
 							open={openDetails}
 							onClose={handleCloseDetails}
 							TransitionComponent={Fade}
-							anchorOrigin={{ horizontal: {anchorMenu}, vertical: 'bottom' }}
+							anchorOrigin={{horizontal: {anchorMenu}, vertical: 'bottom'}}
 						
 						>
 							<MenuItem onClick={handleCloseDetails}><Link href="#" underline="hover">Important
@@ -180,13 +179,11 @@ const NavigationBar = () => {
 							id="menu-appbar"
 							anchorEl={anchorElNav}
 							anchorOrigin={{
-								vertical: 'bottom',
-								horizontal: 'left',
+								vertical: 'bottom', horizontal: 'left',
 							}}
 							keepMounted
 							transformOrigin={{
-								vertical: 'top',
-								horizontal: 'left',
+								vertical: 'top', horizontal: 'left',
 							}}
 							open={openNav}
 							onClose={handleCloseNav}
@@ -204,7 +201,7 @@ const NavigationBar = () => {
 							>Important Details
 							</MenuItem>
 							<MenuItem key="About Us" onClick={handleCloseNav}>
-								<Link href="#"  underline="hover">Contact Us</Link>
+								<Link href="#" underline="hover">Contact Us</Link>
 							</MenuItem>
 							<MenuItem key="Login" onClick={handleCloseNav}>
 								<Link href="#" underline="hover">Register / Login</Link>
@@ -216,7 +213,6 @@ const NavigationBar = () => {
 				
 				</Toolbar>
 			</Container>
-		</AppBar>
-	);
+		</AppBar>);
 };
 export default NavigationBar;
