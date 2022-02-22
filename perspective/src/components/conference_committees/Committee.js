@@ -6,46 +6,30 @@ import "./Committee.css";
 function Committee() {
   const PATRON = ["Prof. Baldev Setia, Director, PEC Chandigarh"];
   const CO_PATRON = ["Prof. Siby John, Deputy Director, PEC Chandigarh"];
-  const General_Chair = ["Prof. Shailendra Singh, Head of Department (CSE), PEC Chandigarh"];
+  const General_Chair = [
+    "Prof. Shailendra Singh, Head of Department (CSE), PEC Chandigarh",
+  ];
   const Conference_Chairs = [
     "Prof. T.C. Aseri",
     "Prof. Sanjeev Sofat",
     "Prof. Rajesh Bhatia",
   ];
-  const Org_sec = [
-    "Dr. Sandeep Harit",
-    "Dr. Padmavati",
-  ];
+  const Org_sec = ["Dr. Sandeep Harit", "Dr. Padmavati"];
   const Tech_Pro_Chair = [
     "Prof. Mayank Gupta",
     "Dr. Manish Kumar",
     "Prof. Amandeep Singh",
   ];
-  const Pub_chair = [
-    "Dr. Poonam Sain",
-    "Dr. Sachin Chaudhary",
-  ];
-  const Publicity_chair = [
-    "Prof. Rajesh Bhatia",
-    "Dr. Rupali Syal",
-  ];
-  const Finance_Chair = [
-    "Prof. Sudesh Rani",
-    "Dr. Manish Kumar",
-  ];
-  const Spec_Chair = [
-    "Prof. Sanjeev Sofat",
-    "Prof. Alka Jindal",
-  ];
+  const Pub_chair = ["Dr. Poonam Sain", "Dr. Sachin Chaudhary"];
+  const Publicity_chair = ["Prof. Rajesh Bhatia", "Dr. Rupali Syal"];
+  const Finance_Chair = ["Prof. Sudesh Rani", "Dr. Manish Kumar"];
+  const Spec_Chair = ["Prof. Sanjeev Sofat", "Prof. Alka Jindal"];
   const Hos_Log_Chair = [
     "Prof. T.C. Aseri",
     "Prof. Amandeep Kaur",
     "Dr. Aruna Kumar Pundir",
   ];
-  const Web_Management_Chair = [
-    "Prof. Shilpa",
-    "Prof. Mamta",
-  ];
+  const Web_Management_Chair = ["Prof. Shilpa", "Prof. Mamta"];
 
   const National_Adv_Board = [
     "Prof. Baldev Setia, Director, PEC Chandigarh",
@@ -67,13 +51,6 @@ function Committee() {
     "Prof. Rama Krishna Challa, NITTTR Chandigarh",
     "Prof. Subramaniam Anantha Ramakrishna, Director, CSIO",
   ];
-
-  // const National_Adv_Board_cols = [[], []];
-
-  // National_Adv_Board.forEach((data, i) => {
-  //   const colNumber = i % 2;
-  //   National_Adv_Board_cols[colNumber].push(data);
-  // });
 
   return (
     <div className="section-title">
