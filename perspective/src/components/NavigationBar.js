@@ -1,159 +1,122 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 import Navbar from "reactjs-navbar";
 import logo from "../static/pec-logo.png";
 import {TailSpin} from "react-loader-spinner";
-import {
-	faUsers,
-	faBookOpen,
-	faGlobe,
-	faChartPie,
-	faCogs,
-	faAnchor,
-	faDizzy,
-	faAdjust,
-	faBell,
-	faGhost,
-	faFan,
-	faCarSide,
-	faJedi,
-	faLaughBeam,
-	faKey,
-	faCheese,
-	faWater,
-} from "@fortawesome/free-solid-svg-icons";
 
 import "reactjs-navbar/dist/index.css";
 
-class NavigationBar extends Component {
-	state = {
-		isLoading: false,
-	};
+class NavigationBar extends Component{
 	
-	render() {
+	render(){
 		return (
 			<Navbar
 				logo={logo}
-				loader={<TailSpin color="#00BFFF" height={80} width={80} />}
-				isLoading={this.state.isLoading}
-				helpCallback={() => {
-					alert("I need help... and coffee...");
-				}}
+				loader={<TailSpin color="#00BFFF" height={80} width={80}/>}
 				menuItems={[
 					{
-						title: "Administration",
-						icon: faUsers,
+						title: "Home",
 						isAuth: true,
 						onClick: () => {
 							// What you want to do...
 							alert("Its coffee time...");
 						},
 					},
+					
 					{
-						title: "Transactions",
-						icon: faBookOpen,
-						isAuth: () => {
-							// Claim authorization logic...
-							return false;
-						},
-					},
-					{
-						title: "Networks",
-						icon: faGlobe,
-						isAuth: true,
-					},
-					{
-						title: "Settings",
-						icon: faCogs,
+						title: "About",
 						isAuth: true,
 						subItems: [
 							{
-								title: "Subitem 1",
-								icon: faAnchor,
+								title: "About Institute",
 								isAuth: true,
 								onClick: () => {
 									// What you want to do...
-									alert("I need another cup of coffee...");
+									alert("Its About Institue time...");
 								},
 							},
 							{
-								title: "Subitem 2",
-								icon: faDizzy,
+								title: "About Conference",
 								isAuth: true,
-								subItems: [
-									{ title: "Subitem 2-1", icon: faAdjust, isAuth: true },
-									{
-										title: "Subitem 2-2",
-										icon: faBell,
-										isAuth: true,
-										subItems: [
-											{
-												title: "Subitem 2-2-1",
-												icon: faGhost,
-												isAuth: true,
-												subItems: [
-													{
-														title: "Subitem 2-2-2-1",
-														icon: faFan,
-														isAuth: true,
-													},
-													{
-														title: "Subitem 2-2-2-2",
-														icon: faCarSide,
-														isAuth: true,
-													},
-													{
-														title: "Subitem 2-2-2-3",
-														icon: faJedi,
-														isAuth: true,
-													},
-													{
-														title: "Subitem 2-2-2-4",
-														icon: faLaughBeam,
-														isAuth: true,
-													},
-												],
-											},
-											{
-												title: "Subitem 2-2-2",
-												icon: faKey,
-												isAuth: true,
-											},
-										],
-									},
-									{
-										title: "Make request",
-										icon: faCheese,
-										isAuth: true,
-										onClick: () => {
-											// What you want to do...
-											this.setState({ isLoading: true }, () =>
-												setTimeout(() => {
-													this.setState({ isLoading: false });
-												}, 3000)
-											);
-										},
-									},
-								],
+								onClick: () => {
+									// What you want to do...
+									alert("Its About Conference time...");
+								},
+							}
+						],
+					},
+					{
+						title: "Conference Commitee",
+						isAuth: true,
+						subItems: [
+							{
+								title: "Organizing Committee",
+								isAuth: true,
+								onClick: () => {
+									// What you want to do...
+									alert("Its Org Com time...");
+								},
 							},
 							{
-								title: "Subitem 3",
-								icon: faWater,
-								isAuth: () => {
-									// Claim authorization logic...
-									return false;
+								title: "Advisory Board",
+								isAuth: true,
+								onClick: () => {
+									// What you want to do...
+									alert("Its Advisory Board time...");
+								},
+							}
+						],
+					},
+					{
+						title: "Call for Papers",
+						isAuth: true,
+						onClick: () => {
+							// What you want to do...
+							alert("Its Call for Papers time...");
+						},
+					},
+					{
+						title: "Important Details",
+						isAuth: true,
+						subItems: [
+							{
+								title: "Important Dates",
+								isAuth: true,
+								onClick: () => {
+									// What you want to do...
+									alert("I need another cup Dates of coffee...");
+								},
+							},
+							{
+								title: "Payment Gateway",
+								isAuth: true,
+								onClick: () => {
+									// What you want to do...
+									alert("I need another cup Payment of coffee...");
 								},
 							},
 						],
 					},
 					{
-						title: "Reports",
-						icon: faChartPie,
+						title: "Contact Us",
 						isAuth: true,
+						onClick: () => {
+							// What you want to do...
+							alert("I need another cup Contact US of coffee...");
+						},
+					},
+					{
+						title: "Register/Login",
+						isAuth: true,
+						onClick: () => {
+							// What you want to do...
+							alert("I need another cup Register/Login of coffee...");
+						},
 					},
 				]}
 			/>
 		);
 	}
 }
+
 export default NavigationBar
