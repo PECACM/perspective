@@ -70,7 +70,7 @@ const NavigationBar = () => {
 		handleCloseDetails(event);
 		setAnchorElNav(null);
 	};
-	return (<AppBar position="static">
+	return (<AppBar position="fixed" color="primary">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Box
@@ -86,7 +86,7 @@ const NavigationBar = () => {
 							key="About"
 							onClick={handleOpenAbout}
 							sx={{my: 2, color: 'white', display: 'block'}}
-						>About</Button>
+						><Link href="/" color="white" underline="hover">About</Link></Button>
 						<Menu
 							id="fade-menu"
 							MenuListProps={{
@@ -105,7 +105,7 @@ const NavigationBar = () => {
 							key="Commitee"
 							onClick={handleOpenCommittee}
 							sx={{my: 2, color: 'white', display: 'block'}}
-						>Conference Committee</Button>
+						><Link href="/" color="white" underline="hover">Conference Committee</Link></Button>
 						<Menu
 							id="fade-menu"
 							MenuListProps={{
@@ -125,10 +125,10 @@ const NavigationBar = () => {
 							sx={{my: 2, color: 'white', display: 'block'}}
 						><Link href="#" color="white" underline="hover">Call For Papers</Link></Button>
 						<Button
-							key="About"
+							key="Details"
 							onClick={handleOpenDetails}
 							sx={{my: 2, color: 'white', display: 'block'}}
-						>Important Details
+						><Link href="/" color="white" underline="hover">Important Details</Link>
 						</Button>
 						<Menu
 							id="fade-menu"
@@ -194,23 +194,26 @@ const NavigationBar = () => {
 							<MenuItem key="Home" onClick={handleCloseNav}>
 								<Link href="/" underline="hover">Home</Link>
 							</MenuItem>
-							<MenuItem
-								key="Details"
-								onClick={handleOpenDetails}
-								sx={{my: 2, display: 'block'}}
-							>Important Details
+							<MenuItem	key="About" onClick={handleOpenAbout}>
+								<Link href="#" underline="hover">About</Link>
 							</MenuItem>
-							<MenuItem key="About Us" onClick={handleCloseNav}>
+							<MenuItem	key="Commitee" onClick={handleOpenCommittee}>
+								<Link href="/" underline="hover">Conference Committee</Link>
+							</MenuItem>
+							<MenuItem key="Call for Papers" onClick={handleCloseNav}>
+								<Link href="/" underline="hover">Call For Papers</Link>
+							</MenuItem>
+							<MenuItem key="Details"	onClick={handleOpenDetails}>
+								<Link href="#" underline="hover">Important Details</Link>
+							</MenuItem>
+							<MenuItem key="Contact Us" onClick={handleCloseNav}>
 								<Link href="#" underline="hover">Contact Us</Link>
 							</MenuItem>
 							<MenuItem key="Login" onClick={handleCloseNav}>
 								<Link href="#" underline="hover">Register / Login</Link>
 							</MenuItem>
-						
 						</Menu>
 					</Box>
-				
-				
 				</Toolbar>
 			</Container>
 		</AppBar>);
