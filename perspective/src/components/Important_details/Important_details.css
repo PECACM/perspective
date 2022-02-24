@@ -1,0 +1,20 @@
+.cards {
+  display: flex;
+}
+
+.cards .card {
+  flex: 1;
+  padding-left: 20px;
+  margin-right: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+  border-radius: 2px;
+}
+
+.cards .card:hover {
+  background-color: blue;
+  color: white;
+  transform: translateY(-10px);
+  transition: 0.1s;
+}
