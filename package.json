@@ -2,7 +2,7 @@
   "name": "perspective",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PECACM.github.io",
+  "homepage": "https://pecacm.github.io/perspective",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/style": "^0.8.0",
