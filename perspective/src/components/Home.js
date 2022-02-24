@@ -6,6 +6,12 @@ import NavigationBar from "./NavigationBar";
 import {Button, Grid} from "@mui/material";
 import {Box} from '@mui/system';
 import Carousel from './carousel/Carousel';
+import About from './about/About';
+import Committee from './conference_committees/Committee';
+import Contact_us from './Contact_us/Contact_us';
+import Important_details from './Important_details/Important_details';
+import Sponsor from './sponsor/Sponsors';
+
 
 import VisibilitySensor from 'react-visibility-sensor';
 
@@ -67,6 +73,11 @@ function Home(){
 				{/*</VisibilitySensor>*/}
 			</Grid>
 		
+      <Sponsor />
+      <About />
+      <Committee />
+      <Important_details />
+      <Contact_us />
 		
 		</div>
 	);
