@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4dc6cecb.css",
-    "main.js": "/static/js/main.8548958e.js",
-    "static/media/two.jpg": "/static/media/two.524a62509b31a16bd163.jpg",
-    "static/media/one.jpg": "/static/media/one.70475ee8010fd9bb3749.jpg",
-    "static/media/sponsor1.png": "/static/media/sponsor1.17679479fed66b89e04f.png",
-    "static/media/sponsor2.png": "/static/media/sponsor2.17679479fed66b89e04f.png",
-    "static/media/sponsor3.png": "/static/media/sponsor3.17679479fed66b89e04f.png",
-    "static/media/pec-logo.png": "/static/media/pec-logo.b38b966e43a9e4a925cc.png",
-    "index.html": "/index.html",
-    "main.4dc6cecb.css.map": "/static/css/main.4dc6cecb.css.map",
-    "main.8548958e.js.map": "/static/js/main.8548958e.js.map"
+    "main.css": "/perspective/static/css/main.4dc6cecb.css",
+    "main.js": "/perspective/static/js/main.b09248ba.js",
+    "static/media/two.jpg": "/perspective/static/media/two.524a62509b31a16bd163.jpg",
+    "static/media/one.jpg": "/perspective/static/media/one.70475ee8010fd9bb3749.jpg",
+    "static/media/sponsor1.png": "/perspective/static/media/sponsor1.17679479fed66b89e04f.png",
+    "static/media/sponsor2.png": "/perspective/static/media/sponsor2.17679479fed66b89e04f.png",
+    "static/media/sponsor3.png": "/perspective/static/media/sponsor3.17679479fed66b89e04f.png",
+    "static/media/pec-logo.png": "/perspective/static/media/pec-logo.b38b966e43a9e4a925cc.png",
+    "index.html": "/perspective/index.html",
+    "main.4dc6cecb.css.map": "/perspective/static/css/main.4dc6cecb.css.map",
+    "main.b09248ba.js.map": "/perspective/static/js/main.b09248ba.js.map"
   },
   "entrypoints": [
     "static/css/main.4dc6cecb.css",
-    "static/js/main.8548958e.js"
+    "static/js/main.b09248ba.js"
   ]
 }
